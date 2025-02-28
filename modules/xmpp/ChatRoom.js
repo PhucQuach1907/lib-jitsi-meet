@@ -954,6 +954,7 @@ export default class ChatRoom extends Listenable {
      * @param elementName
      */
     sendMessage(message, elementName) {
+        logger.info(`PhucQuach: Sending message to ${message}`);
         const msg = $msg({ to: this.roomjid,
             type: 'groupchat' });
 
